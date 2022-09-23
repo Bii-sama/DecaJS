@@ -8,6 +8,6 @@ while(1 < 10){
 let userHat = ['great','house','is','by','the','river']
 
 for(let x = 0; x < userHat.length;x++){
-    console.log(x)
+    console.log(userHat[x])
     x.toUpperCase();
 }
