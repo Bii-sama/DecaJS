@@ -42,14 +42,19 @@ console.log(sumArray(arr)) */
 
 
 function separateEvenAndOdd(arr){
-   for (i = 0; i < arr.length; i++){
-    let evenArr = []
+
+  let evenArr = []
     let oddArr = []
-    if (arr[i]/2 % 0){
-     return evenArr.push[arr[i]]
+   for (i = 0; i < arr.length; i++){
+    
+    if (arr[i] % 2 == 0 ){
+      evenArr.push(arr[i])
     }else{
-     return oddArr.push[arr[i]]
+      oddArr.push(arr[i])
     }
+     console.log(evenArr)
+     console.log(oddArr)
+
    }
 }
 
