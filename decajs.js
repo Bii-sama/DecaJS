@@ -11,7 +11,7 @@ for(let x = 0; x <= userHat.length; x++){
   
     document.write(userHat[x].toUpperCase())
    
-}*/
+}
 
 
 let user = {
@@ -24,3 +24,34 @@ let user = {
 for(let key in user){
   console.log(user[key])
 }
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+
+function sumArray(array) {
+  let add = 0
+  for(x=0 ; x < array.length; x++){
+  add += array[x]
+  }
+  return add
+}
+
+console.log(sumArray(arr)) */
+
+
+
+
+
+function separateEvenAndOdd(arr){
+   for (i = 0; i < arr.length; i++){
+    let evenArr = []
+    let oddArr = []
+    if (arr[i]/2 % 0){
+     return evenArr.push[arr[i]]
+    }else{
+     return oddArr.push[arr[i]]
+    }
+   }
+}
+
+let arr1 = [2,4,6,8,10,12,13,17,18,19,22,31,39]
+console.log(separateEvenAndOdd(arr1))
