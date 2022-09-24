@@ -60,7 +60,7 @@ function separateEvenAndOdd(arr){
 }
 
 let arr1 = [2,4,6,8,10,12,13,17,18,19,22,31,39]
-console.log(separateEvenAndOdd(arr1)) */
+console.log(separateEvenAndOdd(arr1)) 
 
 
 function pickSecondHighest(arr) {
@@ -73,5 +73,37 @@ function pickSecondHighest(arr) {
 
 newNumArr=[2,9,7,3,0,4,16,5];
 
-console.log(pickSecondHighest(newNumArr))
+console.log(pickSecondHighest(newNumArr)) */
+
+
+function pickWords(arr) {
+  let wordArray = []
+  let numArray = []
+  for(i = 0; i < arr.length; i++){
+    if(typeof arr[i] == 'string'){
+      wordArray.push(arr[i])
+    }else{
+      numArray.push(arr[i])
+    }
+  }
+
+  return wordArray;
+}
+
+let diffArray = ['cup',2,3,9,'dress','apple','car', 10, 'fifty']
+
+console.log(pickWords(diffArray));
+
+
+function sumSmallest(arr) {
+  arr = arr.sort(function(a , b) { // create a function that sorts the numbers from lowest to highest
+   a - b
+    return a - b}) // returns array with numbers sorted from lowest to highest
+ 
+  return arr[0] + arr[1]// returns added numbers in first position & second position since it will be index position [0] & [1]
+}
+
+
+let sumNums = [15,12,19,88,72,4,29,60];
+console.log(sumSmallest(sumNums));
 
