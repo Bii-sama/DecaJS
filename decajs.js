@@ -5,10 +5,22 @@ while(1 < 10){
 }*/
 
 
-let userHat = ['great','house','is','by','the','river']
+/*let userHat = ['great',' house',' is',' by',' the',' river']
 
 for(let x = 0; x <= userHat.length; x++){
   
-    console.log(userHat[x].toUpperCase())
+    document.write(userHat[x].toUpperCase())
    
+}*/
+
+
+let user = {
+  name: "Adeola",
+  lastName: "Richards",
+  age: 27,
+  location: "Okota"
+}
+
+for(let key in user){
+  console.log(user[key])
 }
