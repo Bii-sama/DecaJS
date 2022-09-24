@@ -96,7 +96,7 @@ console.log(pickWords(diffArray));
 
 
 function sumSmallest(arr) {
-  arr = arr.sort(function(a , b) { // create a function that sorts the numbers from lowest to highest
+  arr = arr.sort(function(a , b) { // re-assign variable by creating a function that sorts the numbers from lowest to highest
    a - b
     return a - b}) // returns array with numbers sorted from lowest to highest
  
