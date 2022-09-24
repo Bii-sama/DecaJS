@@ -35,7 +35,7 @@ function sumArray(array) {
   return add
 }
 
-console.log(sumArray(arr)) */
+console.log(sumArray(arr)) 
 
 
 
@@ -52,11 +52,26 @@ function separateEvenAndOdd(arr){
     }else{
       oddArr.push(arr[i])
     }
-     console.log(evenArr)
-     console.log(oddArr)
+     
 
    }
+   console.log(evenArr)
+     console.log(oddArr)
 }
 
 let arr1 = [2,4,6,8,10,12,13,17,18,19,22,31,39]
-console.log(separateEvenAndOdd(arr1))
+console.log(separateEvenAndOdd(arr1)) */
+
+
+function pickSecondHighest(arr) {
+     arr = arr.sort(function(a , b) { // create a function that sorts the numbers from highest to lowest
+      b - a
+       return b - a }) // returns array with numbers sorted from highest to lowest
+    
+     return arr[1] // returns number in second position since it will be index position [1]
+}
+
+newNumArr=[2,9,7,3,0,4,16,5];
+
+console.log(pickSecondHighest(newNumArr))
+
