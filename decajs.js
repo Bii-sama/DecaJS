@@ -105,7 +105,7 @@ function sumSmallest(arr) {
 
 
 let sumNums = [15,12,19,88,72,4,29,60];
-console.log(sumSmallest(sumNums));*/
+console.log(sumSmallest(sumNums));
 
 
 function multiples3And7(num) {
@@ -124,4 +124,17 @@ function multiples3And7(num) {
 }
 
 console.log(multiples3And7(200))
+console.log(multiples3And7(10))
+console.log(multiples3And7(100))
+console.log(multiples3And7(350))
+console.log(multiples3And7(900)) */
 
+
+function removeInt(str) {
+ str = str.replace(/[0-9]/g, '')
+ return str
+}
+
+let word = 'acdg9'
+
+console.log(removeInt(word));
