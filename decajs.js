@@ -73,7 +73,7 @@ function pickSecondHighest(arr) {
 
 newNumArr=[2,9,7,3,0,4,16,5];
 
-console.log(pickSecondHighest(newNumArr)) */
+console.log(pickSecondHighest(newNumArr)) 
 
 
 function pickWords(arr) {
@@ -105,5 +105,23 @@ function sumSmallest(arr) {
 
 
 let sumNums = [15,12,19,88,72,4,29,60];
-console.log(sumSmallest(sumNums));
+console.log(sumSmallest(sumNums));*/
+
+
+function multiples3And7(num) {
+  let add = 0
+  let arr = []
+  for(i=0;i<num;i++){
+    if(i%3==0 || i%7==0){
+       arr.push(i)
+    }
+  }
+  for(x=0;x<arr.length; x++){
+   add += arr[x]
+  }
+
+  return add
+}
+
+console.log(multiples3And7(200))
 
