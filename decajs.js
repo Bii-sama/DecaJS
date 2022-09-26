@@ -127,7 +127,7 @@ console.log(multiples3And7(200))
 console.log(multiples3And7(10))
 console.log(multiples3And7(100))
 console.log(multiples3And7(350))
-console.log(multiples3And7(900)) */
+console.log(multiples3And7(900)) 
 
 
 function removeInt(str) {
@@ -137,4 +137,23 @@ function removeInt(str) {
 
 let word = 'acdg9'
 
-console.log(removeInt(word));
+console.log(removeInt(word)); */
+
+
+
+function removeWordsWithE(arr) {
+  let newArr = []
+  let newArr2 = []
+  for (i=0 ; i<arr.length; i++){
+    if(arr[i].includes('e')){
+      newArr.push(arr[i])
+    }else{
+      newArr2.push(arr[i])
+    }
+  }
+  return newArr2
+} 
+
+let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
+
+console.log(removeWordsWithE(words));
