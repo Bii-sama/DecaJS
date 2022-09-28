@@ -137,7 +137,7 @@ function removeInt(str) {
 
 let word = 'acdg9'
 
-console.log(removeInt(word)); */
+console.log(removeInt(word)); 
 
 
 
@@ -157,3 +157,23 @@ function removeWordsWithE(arr) {
 let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
 
 console.log(removeWordsWithE(words));
+
+
+function findIndex(arr,target) {
+  return arr.filter((item)=>item.indexOf(target))
+}
+
+let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
+
+console.log(findIndex(words,'sour')) */
+
+
+function findIndex(arr,target) {
+  //for(i=0 ; i<arr.length;i++){
+    return arr.indexOf(target)
+  //}
+}
+
+let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
+
+console.log(findIndex(words,'hard'))
