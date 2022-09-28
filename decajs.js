@@ -177,3 +177,4 @@ function findIndex(arr,target) {
 let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
 
 console.log(findIndex(words,'hard'))
+console.log(words.slice(0,1))
