@@ -165,7 +165,7 @@ function findIndex(arr,target) {
 
 let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
 
-console.log(findIndex(words,'sour')) */
+console.log(findIndex(words,'sour')) 
 
 
 function findIndex(arr,target) {
@@ -178,3 +178,31 @@ let words = ['good','bad', 'sweet', 'sour', 'nice', 'great', 'banana', 'hard']
 
 console.log(findIndex(words,'hard'))
 console.log(words.slice(0,1))
+
+
+function categorize(arr) {
+  
+ for(i=0; i>arr.length; i++){
+  if(arr.i[0] > 54 && arr.i[1] > 7){
+      return "Old"
+  }else{
+     return 'Young'
+  }
+ }
+} */
+
+
+
+function categorize(arr) {
+  return arr.map((mem)=>{
+    if(mem[0]>54 && mem[1]>7){
+      return "Old"
+    }else{
+      return "Youth"
+    }
+  })
+ }
+
+let places = [[18, 7],[60, 9],[65, 11],[20, 6]]
+
+console.log(categorize(places))
