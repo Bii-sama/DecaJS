@@ -189,7 +189,7 @@ function categorize(arr) {
      return 'Young'
   }
  }
-} */
+} 
 
 
 
@@ -206,3 +206,29 @@ function categorize(arr) {
 let places = [[18, 7],[60, 9],[65, 11],[20, 6]]
 
 console.log(categorize(places))
+
+
+function sumMix(arr) {
+  let add = 0
+  for(i=0; i<arr.length; i++){
+    if(typeof arr[i] =='string'){
+      typeof arr[i] =='number'
+    }
+    for(i=0; i<arr.length; i++){
+      add += arr[i]
+    }
+  }
+   //return arr.reduce((a,b)=> a+b)
+} */
+
+
+function sumMix(arr) {
+ for(i=0; i<arr.length; i++){
+return arr.reduce((a,b)=> parseInt(a)+parseInt(b)) //parseInt converts the string-like numbers to numbers
+}
+}
+let stuff = ['7','9','8','6','3','11','19']
+
+console.log(sumMix(stuff))
+
+
