@@ -219,7 +219,7 @@ function sumMix(arr) {
     }
   }
    //return arr.reduce((a,b)=> a+b)
-} */
+} 
 
 
 function sumMix(arr) {
@@ -230,5 +230,59 @@ return arr.reduce((a,b)=> parseInt(a)+parseInt(b)) //parseInt converts the strin
 let stuff = ['7','9','8','6','3','11','19']
 
 console.log(sumMix(stuff))
+
+function reverseMultiply(arrOfNumbers) {
+  let newArr1 = [] ;
+  for(i=0; i<arrOfNumbers.length; i++){
+    return arrOfNumbers[i]
+  }
+  let arr2 = arrOfNumbers.reverse()
+  for(i=0; i<arr2.length; i++){
+    return arr2[i]
+  }
+  
+   return newArr1
+ } 
+
+function reverseMultiply(arrOfNumbers) {
+  let newArr1 = [] ;
+  let arr1= arrOfNumbers;
+ // let arr2= arrOfNumbers.reverse()
+
+  for (i=0; i<arr1.length; i++){
+  //for(i=0; i<arr2.length; i++)
+    newArr1.push(arr1[i]*arr1.reverse()[i])
+  }
+   return newArr1
+ }
+
+ 
+
+ let stuff = [7,9,8,6,3,11,19]
+ 
+
+console.log(reverseMultiply(stuff))*/
+
+let figure = document.querySelector('#figure')
+let count= 0;
+
+let add = document.querySelector('.add').addEventListener('click', addUp)
+function addUp(){
+  count +=1
+  figure.innerHTML = count;
+}
+
+let subtract = document.querySelector('.subtract').addEventListener('click',subtract)
+
+function subtract(){
+  count-=1
+  figure.innerHTML = count;
+  //count<0 ? '': count--
+}
+
+
+
+ 
+
 
 
