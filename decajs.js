@@ -1,5 +1,3 @@
-
-
 /*let i = 2
 while(1 < 10){
   console.log(i)
@@ -277,10 +275,9 @@ function addUp(){
 let subtract = document.querySelector('.subtract').addEventListener('click',subtractStuff)
 
 function subtractStuff(){
-  //count-=1
-  count < 1 ? 0 : count --
+  count-=1
   figure.innerHTML = count;
-  
+  count<1 ? 0 : count--
 }
 
 
