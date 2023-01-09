@@ -304,7 +304,7 @@ function oddCount(array) {
 
   let newArray = Object.entries(newObj);
   for (let j = 0; j < newArray.length; j++) {
-    if(newArray[j][1]%2 == 1){
+    if(newArray[j][1] %2 == 1){
       emptyArr.push(newArray[j][0])
     }
     
