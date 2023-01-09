@@ -261,7 +261,7 @@ function reverseMultiply(arrOfNumbers) {
  let stuff = [7,9,8,6,3,11,19]
  
 
-console.log(reverseMultiply(stuff))*/
+console.log(reverseMultiply(stuff))
 
 let figure = document.querySelector('#figure')
 let count= 0;
@@ -275,10 +275,49 @@ function addUp(){
 let subtract = document.querySelector('.subtract').addEventListener('click',subtractStuff)
 
 function subtractStuff(){
-  count-=1
+  //count-=1
   figure.innerHTML = count;
-  count<1 ? 0 : count--
+  count < 1 ? 0 : count--
 }
+
+ 
+function oddPyramid(row) {
+  for(let i = 1; i < 50; i+=2){
+    console.log(i)
+  }
+}*/
+
+
+function oddCount(array) {
+  let newObj = {}
+  let emptyArr= []
+  for (let i = 0; i < array.length; i++) {
+    if(newObj[array[i]]){
+      newObj[array[i]] += 1
+    }else{
+      newObj[array[i]] = 1
+    }
+    
+  }
+
+  console.log(newObj)
+
+  let newArray = Object.entries(newObj);
+  for (let j = 0; j < newArray.length; j++) {
+    if(newArray[j][1]%2 == 1){
+      emptyArr.push(newArray[j][0])
+    }
+    
+  }
+  return emptyArr;
+}
+
+
+let arr = [0,0,0,0,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3,7,7,7,7,7,7,7,7,7,7,7,7];
+console.log(oddCount(arr));
+
+
+
 
 
 
